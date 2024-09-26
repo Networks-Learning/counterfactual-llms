@@ -1,0 +1,10 @@
+{
+    "system": "Be creative and keep your response as short as possible.",
+    "query": "Tell me a fantasy story about a captain. The story should have either a happy or a sad ending.",
+    "response": "Captain Lyra stood at the helm of her trusty ship, the \"Maelstrom's Fury\", gazing out at the endless sea. For years, she had sailed the seven seas, seeking the legendary Golden Isle, said to grant a single wish to whoever found it. After a lifetime of searching, Lyra finally spotted the island on the horizon.\n\nAs she stepped foot on its sandy shores, a warm glow enveloped her. Before her, a chest overflowing with glittering gold and jewels lay at her feet. Lyra's heart soared as she reached for the treasure. But, as she touched the gold, the isle began to fade away, leaving her with nothing but a whispered promise: \"The true treasure was the journey, not the gold.\" Lyra's eyes welled up with tears as she realized the bitter truth \u2013 she had sacrificed everything for fleeting riches, and lost the love of her crew, her family, and herself. The \"Maelstrom's Fury\" sailed away, a lonely shadow on the vast ocean, carrying a captain forever haunted by the what-ifs.",
+    "seed": 2,
+    "temperature": 0.9,
+    "sampler_type": "vocabulary",
+    "top_p": 0.9,
+    "top_k": 5
+}
