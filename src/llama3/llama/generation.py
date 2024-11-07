@@ -22,8 +22,6 @@ from fairscale.nn.model_parallel.initialize import (
 from llama.model import ModelArgs, Transformer
 from llama.tokenizer import ChatFormat, Dialog, Message, Tokenizer
 
-from .sampler import Sampler
-
 
 class CompletionPrediction(TypedDict, total=False):
     generation: str
@@ -136,8 +134,6 @@ class Llama:
         prompt_tokens: List[List[int]],
         max_gen_len: int,
         temperature: float = 0.6,
-        top_p: float = None,
-        top_k: int = None,
         sampler = None,
         logprobs: bool = False,
         echo: bool = False,
@@ -336,8 +332,6 @@ class Llama:
         self,
         dialogs: List[Dialog],
         temperature: float = 0.6,
-        top_p: float = None,
-        top_k: int = None,
         sampler = None,
         max_gen_len: Optional[int] = None,
         logprobs: bool = False,
@@ -377,8 +371,6 @@ class Llama:
             prompt_tokens=prompt_tokens,
             max_gen_len=max_gen_len,
             temperature=temperature,
-            top_p=top_p,
-            top_k=top_k,
             logprobs=logprobs,
             genstates=genstates,
             auto_intervention=auto_intervention,

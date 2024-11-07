@@ -15,8 +15,18 @@ params = {
     'top_k': 5,    # this value doesn't matter if the respective sampler_type is not "top-k"
     'genstates': "True", 
     'ckpt_dir':"src/llama3/pretrained/Meta-Llama-3-8B-Instruct/",
-    'tokenizer_path':"src/llama3/pretrained/Meta-Llama-3-8B-Instruct/tokenizer.model"
+    'tokenizer_path':"src/llama3/pretrained/Meta-Llama-3-8B-Instruct/tokenizer.model",
+    'model_family': "llama3"
 }
+# NOTE: instructions for using different model families
+# mistral:
+# - ckpt_dir="src/mistral-inference/8B-Instruct/"
+# - tokenizer_path="src/mistral-inference/8B-Instruct/"
+# - model_family="mistral"
+# llama3:
+# - ckpt_dir="src/llama3/pretrained/Meta-Llama-3-8B-Instruct/"
+# - tokenizer_path="src/llama3/pretrained/Meta-Llama-3-8B-Instruct/tokenizer.model"
+# - model_family="llama3"
 
 cmd = ['torchrun', '--nproc_per_node', f"{nproc_per_node}", 'src/single_query.py']
 for k, v in params.items():
