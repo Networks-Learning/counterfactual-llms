@@ -96,10 +96,10 @@ In case you have questions about the code, you identify potential bugs or you wo
 
 If you use parts of the code in this repository for your own research, please consider citing:
 
-    @article{chatzi2024counterfactual,
+    @inproceedings{chatzi2024counterfactual,
       title={Counterfactual Token Generation in Large Language Models}, 
       author={Ivi Chatzi and Nina Corvelo Benz and Eleni Straitouri and Stratis Tsirtsis and Manuel Gomez-Rodriguez},
-      year={2024},
-      journal={arXiv preprint arXiv:2409.17027}
+      year={2025},
+      booktitle={Proceedings of the 4th conference on Causal Learning and Reasoning}
     }
 
